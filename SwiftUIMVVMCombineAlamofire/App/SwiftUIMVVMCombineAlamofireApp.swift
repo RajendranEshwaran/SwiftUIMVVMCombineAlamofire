@@ -2,7 +2,7 @@
 //  SwiftUIMVVMCombineAlamofireApp.swift
 //  SwiftUIMVVMCombineAlamofire
 //
-//  Created by gomathi saminathan on 3/13/22.
+//  Created by Rajendran Eshwaran on 3/13/22.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIMVVMCombineAlamofireApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
