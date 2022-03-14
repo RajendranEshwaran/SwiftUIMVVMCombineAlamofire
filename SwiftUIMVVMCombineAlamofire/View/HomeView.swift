@@ -14,14 +14,14 @@ struct HomeView: View {
                 .tabItem{
                     Text("TopMovies")
                     Image(systemName: "film")
-                        .tabbbarIcons(width: 30, height: 30)
+                        .imageResuableModifier(width: 30, height: 30)
                 }
             
             TopTVShowView()
                 .tabItem{
                     Text("TopTVShows")
                     Image(systemName: "tv")
-                        .tabbbarIcons(width: 30, height: 30)
+                        .imageResuableModifier(width: 30, height: 30)
                 }
         }
     }

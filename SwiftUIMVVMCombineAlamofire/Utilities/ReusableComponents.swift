@@ -9,10 +9,11 @@ import Foundation
 import SwiftUI
 
 extension Image{
-    func tabbbarIcons(width:CGFloat,height:CGFloat)-> some View{
+    func imageResuableModifier(width:CGFloat,height:CGFloat)-> some View{
         self
             .resizable()
             .aspectRatio(1.0, contentMode: .fit)
             .frame(width: width, height: height, alignment: .center)
     }
 }
+

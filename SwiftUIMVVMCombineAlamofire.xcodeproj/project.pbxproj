@@ -13,11 +13,15 @@
 		9730FEAE27DECC6A00E56BA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9730FEAD27DECC6A00E56BA5 /* Preview Assets.xcassets */; };
 		9730FEBA27DECCDF00E56BA5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEB927DECCDF00E56BA5 /* ServiceManager.swift */; };
 		9730FEBC27DECCFA00E56BA5 /* ReusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBB27DECCFA00E56BA5 /* ReusableComponents.swift */; };
-		9730FEBE27DECD3100E56BA5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBD27DECD3100E56BA5 /* ModelData.swift */; };
+		9730FEBE27DECD3100E56BA5 /* TopMoviesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBD27DECD3100E56BA5 /* TopMoviesDataModel.swift */; };
 		9730FEC027DECD4300E56BA5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBF27DECD4300E56BA5 /* ViewModel.swift */; };
 		9730FEC327DECED900E56BA5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEC227DECED900E56BA5 /* HomeView.swift */; };
 		9730FEC527DECF5900E56BA5 /* TopMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEC427DECF5900E56BA5 /* TopMoviesView.swift */; };
 		9730FEC727DECF6F00E56BA5 /* TopTVShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEC627DECF6F00E56BA5 /* TopTVShowView.swift */; };
+		9773ABD127DFDA370083D58F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773ABD027DFDA370083D58F /* Test.swift */; };
+		9773ABD327DFDD230083D58F /* TopTVShowsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773ABD227DFDD230083D58F /* TopTVShowsDataModel.swift */; };
+		9773ABD627DFDF990083D58F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9773ABD527DFDF990083D58F /* Alamofire */; };
+		9773ABD827DFE2380083D58F /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773ABD727DFE2380083D58F /* URLExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +32,14 @@
 		9730FEAD27DECC6A00E56BA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9730FEB927DECCDF00E56BA5 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		9730FEBB27DECCFA00E56BA5 /* ReusableComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableComponents.swift; sourceTree = "<group>"; };
-		9730FEBD27DECD3100E56BA5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		9730FEBD27DECD3100E56BA5 /* TopMoviesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesDataModel.swift; sourceTree = "<group>"; };
 		9730FEBF27DECD4300E56BA5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9730FEC227DECED900E56BA5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9730FEC427DECF5900E56BA5 /* TopMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesView.swift; sourceTree = "<group>"; };
 		9730FEC627DECF6F00E56BA5 /* TopTVShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVShowView.swift; sourceTree = "<group>"; };
+		9773ABD027DFDA370083D58F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		9773ABD227DFDD230083D58F /* TopTVShowsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVShowsDataModel.swift; sourceTree = "<group>"; };
+		9773ABD727DFE2380083D58F /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9773ABD627DFDF990083D58F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,7 @@
 				9730FEC227DECED900E56BA5 /* HomeView.swift */,
 				9730FEC427DECF5900E56BA5 /* TopMoviesView.swift */,
 				9730FEC627DECF6F00E56BA5 /* TopTVShowView.swift */,
+				9773ABD027DFDA370083D58F /* Test.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,7 +116,8 @@
 		9730FEB627DECC9C00E56BA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9730FEBD27DECD3100E56BA5 /* ModelData.swift */,
+				9730FEBD27DECD3100E56BA5 /* TopMoviesDataModel.swift */,
+				9773ABD227DFDD230083D58F /* TopTVShowsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				9730FEBB27DECCFA00E56BA5 /* ReusableComponents.swift */,
+				9773ABD727DFE2380083D58F /* URLExtension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -152,6 +163,9 @@
 			dependencies = (
 			);
 			name = SwiftUIMVVMCombineAlamofire;
+			packageProductDependencies = (
+				9773ABD527DFDF990083D58F /* Alamofire */,
+			);
 			productName = SwiftUIMVVMCombineAlamofire;
 			productReference = 9730FEA327DECC6800E56BA5 /* SwiftUIMVVMCombineAlamofire.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +194,9 @@
 				Base,
 			);
 			mainGroup = 9730FE9A27DECC6800E56BA5;
+			packageReferences = (
+				9773ABD427DFDF990083D58F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9730FEA427DECC6800E56BA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,11 +225,14 @@
 			files = (
 				9730FEC527DECF5900E56BA5 /* TopMoviesView.swift in Sources */,
 				9730FEBC27DECCFA00E56BA5 /* ReusableComponents.swift in Sources */,
+				9773ABD327DFDD230083D58F /* TopTVShowsDataModel.swift in Sources */,
 				9730FEC327DECED900E56BA5 /* HomeView.swift in Sources */,
 				9730FEA927DECC6800E56BA5 /* MainView.swift in Sources */,
-				9730FEBE27DECD3100E56BA5 /* ModelData.swift in Sources */,
+				9773ABD827DFE2380083D58F /* URLExtension.swift in Sources */,
+				9730FEBE27DECD3100E56BA5 /* TopMoviesDataModel.swift in Sources */,
 				9730FEA727DECC6800E56BA5 /* SwiftUIMVVMCombineAlamofireApp.swift in Sources */,
 				9730FEC727DECF6F00E56BA5 /* TopTVShowView.swift in Sources */,
+				9773ABD127DFDA370083D58F /* Test.swift in Sources */,
 				9730FEC027DECD4300E56BA5 /* ViewModel.swift in Sources */,
 				9730FEBA27DECCDF00E56BA5 /* ServiceManager.swift in Sources */,
 			);
@@ -417,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9773ABD427DFDF990083D58F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9773ABD527DFDF990083D58F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9773ABD427DFDF990083D58F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9730FE9B27DECC6800E56BA5 /* Project object */;
 }
