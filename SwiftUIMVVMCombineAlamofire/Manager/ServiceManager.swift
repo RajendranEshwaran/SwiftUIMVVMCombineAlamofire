@@ -25,7 +25,7 @@ struct BackendError: Codable, Error {
     var message: String
 }
 protocol ServiceProtocol{
-    func getServiceData()-> AnyPublisher<DataResponse<TopMoviesDataModel,NetworkErrors>,Never>
+    func getTopMoviesServiceData()-> AnyPublisher<TopMoviesDataModel,NetworkErrors>
 }
 
 class Service{
@@ -34,20 +34,27 @@ class Service{
 }
 
 extension Service: ServiceProtocol{
-    func getServiceData() -> AnyPublisher<DataResponse<TopMoviesDataModel, NetworkErrors>, Never> {
+    
+    
+    func getTopMoviesServiceData() -> AnyPublisher<TopMoviesDataModel,NetworkErrors> {
         let url = URL.getMoviesUrl()
-        
         return AF.request(url!,method: .get)
-            .validate()
-            .publishDecodable(type:TopMoviesDataModel.self)
-            .map{ response in
-                response.mapError { error in
-                    let backendError = response.data.flatMap { try? JSONDecoder().decode(BackendError.self, from: $0)}
-                    return NetworkErrors.decoderError
-                }
+                     .publishDecodable(type: TopMoviesDataModel.self)
+                     .value()
+                     .mapError { _ in NetworkErrors.decoderError }
+                     .eraseToAnyPublisher()
+    }
+    
+    func getTopTVShowsServiceData()-> AnyPublisher<TopTVShowsDataModel,Error>{
+        let url = URL.getTVShowsUrl()!
+        return AF.request(url, method: .get)
+            .publishDecodable(type: TopTVShowsDataModel.self)
+            .tryCompactMap { (response) -> TopTVShowsDataModel? in
+                if let error = response.error { throw error }
+                return response.value
             }
-            .receive(on:DispatchQueue.main)
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
-    }    
+    }
 }
 

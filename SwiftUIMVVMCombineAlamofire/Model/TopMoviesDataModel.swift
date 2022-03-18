@@ -12,7 +12,7 @@ struct TopMoviesDataModel: Decodable,Identifiable {
     let items: [MovieItem]?
     let errorMessage: String?
     enum CodingKeys : String, CodingKey{
-        case items = "item",errorMessage
+        case items,errorMessage
     }
 }
 

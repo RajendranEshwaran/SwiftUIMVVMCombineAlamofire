@@ -2,7 +2,7 @@
 //  URLExtension.swift
 //  SwiftUIMVVMCombineAlamofire
 //
-//  Created by gomathi saminathan on 3/14/22.
+//  Created by Rajendran Eshwaran on 3/14/22.
 //
 
 import Foundation
@@ -13,5 +13,10 @@ extension URL{
         guard let url = URL(string: "https://imdb-api.com/en/API/Top250Movies/k_p6xx9arv") else {return nil}
         return url
     }
-    // https://imdb-api.com/en/API/Top250TVs/k_p6xx9arv
+    
+    static func getTVShowsUrl()->URL?
+    {
+        guard let url = URL(string: "https://imdb-api.com/en/API/Top250TVs/k_p6xx9arv") else {return nil}
+        return url
+    }
 }

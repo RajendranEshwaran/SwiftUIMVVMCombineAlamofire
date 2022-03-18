@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9718806B27E3FBC7005C42BB /* TVShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718806A27E3FBC7005C42BB /* TVShowViewModel.swift */; };
 		9730FEA727DECC6800E56BA5 /* SwiftUIMVVMCombineAlamofireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEA627DECC6800E56BA5 /* SwiftUIMVVMCombineAlamofireApp.swift */; };
 		9730FEA927DECC6800E56BA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEA827DECC6800E56BA5 /* MainView.swift */; };
 		9730FEAB27DECC6A00E56BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9730FEAA27DECC6A00E56BA5 /* Assets.xcassets */; };
@@ -14,7 +15,7 @@
 		9730FEBA27DECCDF00E56BA5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEB927DECCDF00E56BA5 /* ServiceManager.swift */; };
 		9730FEBC27DECCFA00E56BA5 /* ReusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBB27DECCFA00E56BA5 /* ReusableComponents.swift */; };
 		9730FEBE27DECD3100E56BA5 /* TopMoviesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBD27DECD3100E56BA5 /* TopMoviesDataModel.swift */; };
-		9730FEC027DECD4300E56BA5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBF27DECD4300E56BA5 /* ViewModel.swift */; };
+		9730FEC027DECD4300E56BA5 /* TopMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEBF27DECD4300E56BA5 /* TopMoviesViewModel.swift */; };
 		9730FEC327DECED900E56BA5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEC227DECED900E56BA5 /* HomeView.swift */; };
 		9730FEC527DECF5900E56BA5 /* TopMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEC427DECF5900E56BA5 /* TopMoviesView.swift */; };
 		9730FEC727DECF6F00E56BA5 /* TopTVShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730FEC627DECF6F00E56BA5 /* TopTVShowView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9718806A27E3FBC7005C42BB /* TVShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewModel.swift; sourceTree = "<group>"; };
 		9730FEA327DECC6800E56BA5 /* SwiftUIMVVMCombineAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVVMCombineAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9730FEA627DECC6800E56BA5 /* SwiftUIMVVMCombineAlamofireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVMCombineAlamofireApp.swift; sourceTree = "<group>"; };
 		9730FEA827DECC6800E56BA5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 		9730FEB927DECCDF00E56BA5 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		9730FEBB27DECCFA00E56BA5 /* ReusableComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableComponents.swift; sourceTree = "<group>"; };
 		9730FEBD27DECD3100E56BA5 /* TopMoviesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesDataModel.swift; sourceTree = "<group>"; };
-		9730FEBF27DECD4300E56BA5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9730FEBF27DECD4300E56BA5 /* TopMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesViewModel.swift; sourceTree = "<group>"; };
 		9730FEC227DECED900E56BA5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9730FEC427DECF5900E56BA5 /* TopMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesView.swift; sourceTree = "<group>"; };
 		9730FEC627DECF6F00E56BA5 /* TopTVShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTVShowView.swift; sourceTree = "<group>"; };
@@ -108,7 +110,8 @@
 		9730FEB527DECC9300E56BA5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9730FEBF27DECD4300E56BA5 /* ViewModel.swift */,
+				9730FEBF27DECD4300E56BA5 /* TopMoviesViewModel.swift */,
+				9718806A27E3FBC7005C42BB /* TVShowViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -228,12 +231,13 @@
 				9773ABD327DFDD230083D58F /* TopTVShowsDataModel.swift in Sources */,
 				9730FEC327DECED900E56BA5 /* HomeView.swift in Sources */,
 				9730FEA927DECC6800E56BA5 /* MainView.swift in Sources */,
+				9718806B27E3FBC7005C42BB /* TVShowViewModel.swift in Sources */,
 				9773ABD827DFE2380083D58F /* URLExtension.swift in Sources */,
 				9730FEBE27DECD3100E56BA5 /* TopMoviesDataModel.swift in Sources */,
 				9730FEA727DECC6800E56BA5 /* SwiftUIMVVMCombineAlamofireApp.swift in Sources */,
 				9730FEC727DECF6F00E56BA5 /* TopTVShowView.swift in Sources */,
 				9773ABD127DFDA370083D58F /* Test.swift in Sources */,
-				9730FEC027DECD4300E56BA5 /* ViewModel.swift in Sources */,
+				9730FEC027DECD4300E56BA5 /* TopMoviesViewModel.swift in Sources */,
 				9730FEBA27DECCDF00E56BA5 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
