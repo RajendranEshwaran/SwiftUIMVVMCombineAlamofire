@@ -13,4 +13,7 @@ Simple application for showing top movies and tv shows using combine framework, 
 * It works on iPhone just fine.
 WARNING on iPAD:
 
+# Output ScreenShots:
+![Untitled-1](https://user-images.githubusercontent.com/10699484/159750553-541b5731-d3b5-455e-b78c-56acd14898f3.png)
+
 
